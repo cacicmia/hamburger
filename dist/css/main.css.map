@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout.sass"],"names":[],"mappings":"AAAA;EACI,UAAU;EACV,SAAS;EACT,sBAAsB,EAAA;;AAE1B;EACI,aAAa;EACb,iBAAiB,EAAA","file":"main.css","sourcesContent":["* {\n    padding: 0;\n    margin: 0;\n    box-sizing: border-box; }\n\nbody {\n    display: flex;\n    flex-flow: column; }\n"]}

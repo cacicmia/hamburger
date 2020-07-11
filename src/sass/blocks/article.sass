@@ -2,17 +2,18 @@
     height: 200px
     margin: 0 auto
     width: 100%
-    .flex-container
+    &__flex-container
         display: flex
+        flex-flow: column
         max-width: 1400px
         width: 100%
     &:nth-of-type(odd)
         background-color: $white
     &:nth-of-type(even)
         background-color: $background-gray
-    &--image-container
+    &__image-container
 
-    &--text-container
+    &__text-container
         display: flex
         flex-flow: column
 

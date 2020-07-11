@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburger</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
-    <header>
+    <header class="header">
+        <nav class="page-nav" id="page-navigation">
+            <div class="page-nav__expansion-container">
+                <a class="page-nav__menu-control" id="menu-close" >
+                    <i class="material-icons-round page-nav__menu-icon">close</i> <span>Close</span>
+                </a>
+                <ul class="page-nav__menu">
+                    <li class="page-nav__nav-item">
+                        <a class="page-nav__nav-link">Home</a>
+                    </li>
+                    <li class="page-nav__nav-item">
+                        <a class="page-nav__nav-link">About us</a>
+                    </li>
+                    <li class="page-nav__nav-item">
+                        <a class="page-nav__nav-link">Products</a>
+                    </li>
+                    <li class="page-nav__nav-item">
+                        <a class="page-nav__nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="page-nav__menu-control" id="menu-open">
+                <i class="material-icons-round page-nav__menu-icon">menu</i> <span>Menu</span>
+            </a>
+
+            
+        </nav>
 
     </header>
-    <article class="article">nanana
-        <div class="flex-container">
-            <div class="article--image-container">
+    <section class="slider" id="hero-slider">
+    
+    </section>
+    <article class="article">
+        <div class="article__flex-container">
+            <div class="article__image-container">
 
             </div>
-            <div class="article--text-container"></div>
+            <div class="article__text-container"></div>
         </div>
     </article>
     <article class="article">
-        <div class="flex-container">
-            <div class="article--image-container">
+        <div class="article__flex-container">
+            <div class="article__image-container">
                 
             </div>
-            <div class="article--text-container"></div>
+            <div class="article__text-container"></div>
             </div>
     </article>
     <footer class="footer">
-        <button class="btn btn-primary">blaa</button>
+        <button class="btn btn--primary">blaa</button>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 

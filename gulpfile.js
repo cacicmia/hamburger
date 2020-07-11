@@ -5,11 +5,10 @@ const webpackStream = require('webpack-stream')
 const browserSync = require('browser-sync').create()
 const postcss = require('gulp-postcss')
 const sourcemaps = require('gulp-sourcemaps')
-
-
 const autoprefixer = require('autoprefixer')
 const sass = require('gulp-sass')
-var uglifycss = require('gulp-uglifycss')
+const uglifycss = require('gulp-uglifycss')
+
 function styles(done) {
     src('src/sass/main.sass')
     .pipe(sourcemaps.init())

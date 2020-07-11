@@ -1,2 +1,9 @@
-*{padding:0;margin:0;box-sizing:border-box}body{display:flex;flex-flow:column}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+.footer{background-color:#000;color:#FFF}.btn{border:0;border-radius:0;font-family:"Raleway",sans-serif;-webkit-transform:translateX(50%);transform:translateX(50%);-webkit-transition:all .5s;transition:all .5s}
+.btn:not([disabled]):hover{background-color:#a1baf4;color:#FFF}.btn--primary{background-color:#FFF;color:#000}
+.btn--secondary{background-color:#000;color:#FFF}.article{height:200px;margin:0 auto;width:100%}
+.article .flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:1400px;width:100%}
+.article:nth-of-type(odd){background-color:#FFF}.article:nth-of-type(even){background-color:#f8f8f8}
+.article--text-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
 /*# sourceMappingURL=main.css.map */

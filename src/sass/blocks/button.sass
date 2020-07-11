@@ -1,0 +1,22 @@
+@mixin hover
+  &:not([disabled]):hover
+    @content
+
+.btn
+    border: none
+    border-radius: 0
+    font-family: $font-family
+    transform: translateX(50%)
+    transition: all .5s
+    
+    @include hover
+        background-color: $hover-blue
+        color: $white
+    &--primary
+        background-color: $white
+        color: $black
+        
+
+    &--secondary
+        background-color: $black
+        color: $white

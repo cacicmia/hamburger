@@ -1,3 +1,39 @@
 .footer
+    margin: 10px 0
     background-color: $black
     color: $white
+    min-height: 285px
+    &__social
+        margin: 95px 0
+        text-align: center
+        h3 
+            color: $footer-heading
+            font-family: $font-family
+            font-weight: 500
+            font-size: 30px
+    &__social-links
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width:  405px
+    &__social-link
+        display: inline-block
+        margin: 20px 55px  
+        width: 24px
+        img
+            height: 24px
+            width: 100%
+    &__newsletter-form
+
+        input
+            background-color: $black
+            color: $form-border
+            min-width: 208px
+            margin-right: 16px
+            &::placeholder
+                color: $form-border
+        button
+            margin: 10px 0
+
+        

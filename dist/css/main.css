@@ -1,15 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
 body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
-body.overflow-hidden{overflow-y:hidden}.header{position:relative;width:100%}.page-nav{position:absolute;top:0;left:0;padding:15px 20px;color:#FFF;background-color:transparent;font-family:"Raleway",sans-serif}
+body.overflow-hidden{overflow-y:hidden}form input{height:32px}form input,form textarea{border:1px solid #979797;margin:10px 0;resize:none;padding:10px 14px}
+form input::-webkit-input-placeholder,form textarea::-webkit-input-placeholder{color:#303030;font-family:"Raleway",sans-serif;font-weight:300}
+form input::-moz-placeholder,form textarea::-moz-placeholder{color:#303030;font-family:"Raleway",sans-serif;font-weight:300}
+form input:-ms-input-placeholder,form textarea:-ms-input-placeholder{color:#303030;font-family:"Raleway",sans-serif;font-weight:300}
+form input::-ms-input-placeholder,form textarea::-ms-input-placeholder{color:#303030;font-family:"Raleway",sans-serif;font-weight:300}
+form input::placeholder,form textarea::placeholder{color:#303030;font-family:"Raleway",sans-serif;font-weight:300}
+form input:focus,form textarea:focus{outline-color:#a1baf4}form.submitted input:invalid,form.submitted textarea:invalid{border-color:#f08992}
+form.submitted input:invalid:focus,form.submitted textarea:invalid:focus{outline-color:#f08992}
+.link{color:#000;text-transform:uppercase;font-size:15px;font-family:"Raleway",sans-serif;display:block;margin:10px 0}
+.header{position:relative;width:100%}.page-nav{position:absolute;top:0;left:0;padding:15px 20px;color:#FFF;background-color:transparent;font-family:"Raleway",sans-serif}
 .page-nav__expansion-container{display:none;height:100vh}.page-nav__menu-control{padding:10px;font-size:16px}
 .page-nav__menu-icon{vertical-align:sub;font-size:20px}.page-nav__menu{list-style-type:none;position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:calc(100% - 40px)}
 .page-nav__nav-item{margin:12px 0;width:100%}.page-nav__nav-link{text-align:center;display:block;padding:10px;font-size:30px}
 .page-nav--opened{width:100%;display:block;background-color:#1e1e1e}.page-nav--opened .page-nav__expansion-container{display:block}
 .page-nav--opened #menu-open{display:none}.slider{height:640px;width:100%;background-color:#414141}
-.footer{background-color:#000;color:#FFF}.btn{border:0;border-radius:0;font-family:"Raleway",sans-serif;-webkit-transform:translateX(50%);transform:translateX(50%);-webkit-transition:all .5s;transition:all .5s}
-.btn:not([disabled]):hover{background-color:#a1baf4;color:#FFF}.btn--primary{background-color:#FFF;color:#000}
-.btn--secondary{background-color:#000;color:#FFF}.article{height:200px;margin:0 auto;width:100%}
-.article__flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;max-width:1400px;width:100%}
+.contact{width:100%;background-color:#FFF;padding:60px 20px}.contact__info h1{font-size:36px;color:#464646;margin-bottom:10px;font-family:"Raleway-Medium",sans-serif;font-weight:400}
+.contact__info p{color:#414141;font-size:16px;font-family:"Raleway",sans-serif;margin:0}
+.contact__flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
+.contact__general-info{font-family:"Lato",sans-serif;font-weight:500;padding:30px 0;font-size:15px;font-weight:500}
+.contact__table{width:100%;border:0;margin:40px 0}.contact__table tr td:first-child{font-size:12px;font-family:"Raleway",sans-serif;text-transform:uppercase;line-height:2.08;color:#3d3d3d}
+.contact__table tr td:not(:first-child){font-family:"Lato",sans-serif;font-weight:500;color:#323232}
+.contact__form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+.contact__form-element{width:100%;border:1px solid #979797;margin:10px 0;min-height:32px;resize:none;padding:10px 14px}
+.contact__validation-message--success{color:#53bc54}.contact__validation-message--error{color:#f81010}
+.footer{margin:10px 0;background-color:#000;color:#FFF;min-height:285px}.footer__social{margin:95px 0;text-align:center}
+.footer__social h3{color:#7a7a7a;font-family:"Raleway",sans-serif;font-weight:500;font-size:30px}
+.footer__social-links{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0 auto;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:405px}
+.footer__social-link{display:inline-block;margin:20px 55px;width:24px}.footer__social-link img{height:24px;width:100%}
+.footer__newsletter-form input{background-color:#000;color:#979797;min-width:208px;margin-right:16px}
+.footer__newsletter-form input::-webkit-input-placeholder{color:#979797}.footer__newsletter-form input::-moz-placeholder{color:#979797}
+.footer__newsletter-form input:-ms-input-placeholder{color:#979797}.footer__newsletter-form input::-ms-input-placeholder{color:#979797}
+.footer__newsletter-form input::placeholder{color:#979797}.footer__newsletter-form button{margin:10px 0}
+.btn{border:0;border-radius:0;font-family:"Raleway",sans-serif}.btn:not([disabled]):hover{background-color:#a1baf4;color:#FFF}
+.btn--primary{background-color:#FFF;color:#000}.btn--secondary{background-color:#000;color:#FFF}
+.btn--big{padding:12px 24px}.btn--medium{min-width:93px;padding-left:10px;padding-right:10px;height:32px}
+.article{height:200px;margin:0 auto;width:100%}.article__flex-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;max-width:1400px;width:100%}
 .article:nth-of-type(odd){background-color:#FFF}.article:nth-of-type(even){background-color:#f8f8f8}
 .article__text-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}
 /*# sourceMappingURL=main.css.map */

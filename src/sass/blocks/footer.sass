@@ -20,6 +20,7 @@
         justify-content: space-between
         flex-wrap: wrap    
         max-width:  205px
+       
         @media (min-width: $m)
             max-width: 405px
        
@@ -28,6 +29,14 @@
         margin: 10px 0px  
         width: 24px
         flex-basis: 33%
+        .hover
+            display: none
+        &:hover
+            color: $hover-blue
+            .hover
+                display: block
+            .img
+                display: none
         @media (min-width: $m)
             flex-basis: initial
         img
@@ -36,11 +45,11 @@
     &__newsletter-form
         input
             background-color: $black
-            color: $form-border
+            color: $white
             min-width: 208px
             margin-right: 16px
             &::placeholder
-                color: $form-border
+                color: $newsletter-placeholder
         button
             margin: 10px 0
 

@@ -1,39 +1,56 @@
 $(document).ready(function() {
-console.log('works')
-const menuOpen = $('#menu-open')
-const menuClose = $('#menu-close')
-const pageNavigation= $('#page-navigation')
-const body = $(document.body)
-const formElements = $('.contact__form-element')
-const submitForm = $('#submit-form') 
 
-menuOpen.on('click', function() {
-    pageNavigation.addClass('page-nav--opened');
-    body.addClass('overflow-hidden')
-} )
-menuClose.on('click', function() {
-    pageNavigation.removeClass('page-nav--opened');
-    body.removeClass('overflow-hidden')
-})
-submitForm.on('click', function(e) {
-    
-    form = $(this).closest('form')
-    form.addClass('submitted')
-})
-// formElements.on('focusout', function() {
-//     let element = $(this)
-//     let isValid = this.checkValidity()
-//     if (!isValid){
-//         element.addClass('has-error')
-//     } else {
-//         element.removeClass('has-error')
+    const menuOpen = $('#menu-open')
+    const menuClose = $('#menu-close')
+    const pageNavigation= $('#page-navigation')
+    const body = $(document.body)
 
-//     }
+    const submitForm = $('#submit-form') 
+    const newsletterSubmit = $('#sign-up')
 
-// })
-$(document).on('click', function(e){
-    // if (pageNavigation.hasClass('page-nav--opened') && (!pageNavigation.is(e.target) || !pageNavigation.has(e.taget))){
-    //     pageNavigation.removeClass('page-nav--opened')
-    // }   
-})
+    const slider = $('#hero-slider')
+    slider.slick({
+        dots: true,
+        slidesToScroll: 4,
+    })
+    menuOpen.on('click', function() {
+        pageNavigation.addClass('page-nav--opened');
+        body.addClass('overflow-hidden')
+    } )
+    menuClose.on('click', function() {
+        pageNavigation.removeClass('page-nav--opened');
+        body.removeClass('overflow-hidden')
+    })
+    newsletterSubmit.on('click',function(e){
+        e.preventDefault()
+        form = $(this).closest('form')
+        form.addClass('submitted')
+    } )
+    submitForm.on('click',function (e) {
+        const validationMessage = $('#validation-message')
+        
+        e.preventDefault()
+        form = $(this).closest('form')
+        const formElements = form.find('.contact__form-element')
+        form.addClass('submitted')
+        let checker = true
+        formElements.each(function(index){
+            let isValid = this.checkValidity()
+            if (!isValid){
+                validationMessage.removeClass('contact__validation-message--success')
+                validationMessage.addClass('contact__validation-message--error')
+                checker = false
+                return false
+            } 
+        })
+        if (checker){
+            validationMessage.removeClass('contact__validation-message--error')
+            validationMessage.addClass('contact__validation-message--success')
+        } else {
+            
+        }
+    } )
+
+
+
 })

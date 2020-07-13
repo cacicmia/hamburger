@@ -2,6 +2,8 @@
     width: 100%
     background-color: $white
     padding: 60px 20px
+    max-width: 940px
+    margin: 0 auto
     &__info
         h1 
             font-size: 36px
@@ -15,32 +17,48 @@
             font-size: 16px
             font-family: $font   
             margin: 0
+        @media (min-width: $m)
+            text-align: center
     &__flex-container   
         display: flex
         flex-flow: column 
+        
+        @media (min-width: $m)
+            flex-flow: row
+            padding: 60px 80px
     &__general-info
         @include font-lato
         padding: 30px 0
         font-size: 15px
         font-weight: 500
+        width: 300px
+       
     &__table
         width: 100%
         border: none
         margin: 40px 0
         tr 
-            td:first-child
-                font-size: 12px
-                font-family: $font
-                text-transform: uppercase
-                line-height: 2.08
-                color: $table-text1
-            td:not(:first-child)
-                @include font-lato
-                color: $table-text2
+            td
+                &:first-child
+                    font-size: 12px
+                    font-family: $font
+                    padding-right: 30px 
+                    text-transform: uppercase
+                    line-height: 2.08
+                    color: $table-text1
+                &:not(:first-child)
+                    @include font-lato
+                    color: $table-text2
+                a 
+                    text-decoration: none 
+                    color: inherit
+        @media (min-width: $m)
+            margin-right: 125px
     &__form
         display: flex
         flex-flow: column
         align-items: flex-end
+        width: 100%
     &__form-element
         width: 100%
         border: 1px solid $form-border

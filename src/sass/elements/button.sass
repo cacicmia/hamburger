@@ -20,9 +20,15 @@
         background-color: $black
         color: $white
     &--big
-        padding: 12px 24px
+        padding-left: 24px
+        padding-right: 24px
+        height: 44px
+        @media (min-width: $m)
+            height: 50px
     &--medium
         min-width: 93px
         padding-left: 10px
         padding-right: 10px
         height: 32px
+        @media (min-width: $m)
+            height: 50px

@@ -1,25 +1,60 @@
+
+@keyframes animate-from-left 
+    from
+        transform: translate(-150%)
+    
+    to 
+        transform: translate(0%)
+@keyframes animate-from-right 
+    from
+        transform: translate(-150%)
+    
+    to 
+        transform: translate(0%)
+    
 .article
     margin: 0 auto
     width: 100%
     padding: 30px 20px 
+    @media (min-width: $m)
+        padding: 120px 20px
     &__flex-container
         display: flex
         flex-flow: column
-        max-width: 1400px
+        max-width: 940px
         width: 100%
+        @media (min-width: $m)
+            flex-flow: row
+            justify-content: space-between
+            margin: 0 auto
+        &--left 
+            flex-flow: row-reverse
     &:nth-of-type(odd)
         background-color: $white
     &:nth-of-type(even)
         background-color: $background-gray
     &__image-container
-        
-   
+        position: relative
+        display: block
+        @media (min-width: $m)
+            height: 299px
     &__image 
         width: 100%
+        @media (min-width: $m)
+            height: 100%
+            width: 540px
+            
+           
         // max-width: 320px
+        // 
+        // &:first-of-type
+        //     animation-duration: 2s
+        //     animation-name: animate-from-left
     &__text-container
         display: flex
         flex-flow: column
+        justify-content: space-around
+
         h3 
             font-family: $font-medium
             font-size: 24px
@@ -35,5 +70,6 @@
         a 
             font-weight: 700
             color: $heading-color 
+        @media (min-width: $m)
+            padding-left: 60px
 
-        

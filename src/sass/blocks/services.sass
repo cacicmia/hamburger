@@ -1,0 +1,28 @@
+.services
+    background-color: $black
+    width: 100%
+    padding: 60px 20px
+    h2 
+        color: $white
+        font-family: $font
+        font-weight: 400
+        font-sizte: 36px
+    &__list
+        color: $services-text
+        margin: 10px 0
+        font-family: $font
+        line-height: 26px
+        
+        list-style-type: none
+        li
+            padding-left: 20px
+            position: relative
+            &::before
+                content: '•'
+                font-size: 16px
+                font-weight: bold
+                position: absolute
+                left: 0px
+    &__flex-container
+        display: flex
+        flex-flow: column

@@ -1,7 +1,7 @@
 .article
-    height: 200px
     margin: 0 auto
     width: 100%
+    padding: 30px 20px 
     &__flex-container
         display: flex
         flex-flow: column
@@ -12,10 +12,28 @@
     &:nth-of-type(even)
         background-color: $background-gray
     &__image-container
-
+        
+   
+    &__image 
+        width: 100%
+        // max-width: 320px
     &__text-container
         display: flex
         flex-flow: column
-
+        h3 
+            font-family: $font-medium
+            font-size: 24px
+            color: $heading-color 
+            margin: 20px 0 10px
+        p 
+            line-height: 24px
+            size: 16px
+            font-family:  $font
+            color: $dark-text
+            margin-bottom: 10px
+            
+        a 
+            font-weight: 700
+            color: $heading-color 
 
         

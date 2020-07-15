@@ -48,9 +48,10 @@ function watchTask(done) {
     watch('index.html', reload)
     done()
 }
-exports.watch = watchTask
 
+exports.watch = watchTask
 exports.styles = styles
 exports.scripts = scripts
 exports.serve = serve
 exports.default = watchTask
+exports.build = parallel(styles, scripts)

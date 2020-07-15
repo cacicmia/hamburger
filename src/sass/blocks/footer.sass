@@ -28,15 +28,36 @@
         display: inline-block
         margin: 10px 0px  
         width: 24px
+        height: 24px
         flex-basis: 33%
-        .hover
-            display: none
-        &:hover
-            color: $hover-blue
-            .hover
-                display: block
-            .img
-                display: none
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        display: block
+        &--facebook 
+            background-image: url('#{$img}facebook.svg')
+            &:hover
+                background-image: url('#{$img}facebook-hover.svg')
+        &--twitter
+            background-image: url('#{$img}twitter.svg')
+            &:hover
+                background-image: url('#{$img}twitter-hover.svg')
+        &--instagram
+            background-image: url('#{$img}instagram.svg')
+            &:hover
+                background-image: url('#{$img}instagram-hover.svg')
+        &--snapchat
+            background-image: url('#{$img}snapchat.svg')
+            &:hover
+                background-image: url('#{$img}snapchat-hover.svg')
+        &--pinterest
+            background-image: url('#{$img}pinterest.svg')
+            &:hover
+                background-image: url('#{$img}pinterest-hover.svg')
+        &--youtube
+            background-image: url('#{$img}youtube.svg')
+            &:hover
+                background-image: url('#{$img}youtube-hover.svg')
         @media (min-width: $m)
             flex-basis: initial
         img

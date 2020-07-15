@@ -42,18 +42,42 @@
 
     </header>
     <section class="slider" id="hero-slider">
-        <div class="slider__image-container">
-            <picture>
-                <source media="(max-width: 767px)" 
-                    srcset="img/img-header.jpg, img/img-header@2x.jpg 2x,
-                    img/img-header@3x.jpg 3x"/>
-                <source media="(min-width: 768px)" 
-                    srcset="img/header-img.jpg, img/header-img@2x.jpg 2x,
-                    img/header-img@3x.jpg 3x"/>
-                <img src="img/header-img.jpg" alt="slider-image" class="slider__image"/>
-            </picture>
-            
+        <i class="slider__arrow slider__arrow--prev"></i>
+        <div class="slider__content">
+            <div class="slider__image-container" >
+                <div class="slider__text-container">
+                    <h3 class="slider__heading">Consectetur Elit Ipsum Risus</h3>
+                    <button class="btn btn--primary btn--big">Read more</button>
+                </div>
+                <picture>
+                    <source media="(max-width: 767px)" 
+                        srcset="img/img-header.jpg, img/img-header@2x.jpg 2x,
+                        img/img-header@3x.jpg 3x"/>
+                    <source media="(min-width: 768px)" 
+                        srcset="img/header-img.jpg, img/header-img@2x.jpg 2x,
+                        img/header-img@3x.jpg 3x"/>
+                    <img src="img/header-img.jpg" alt="slider-image" class="slider__image"/>
+                </picture>
+                
+            </div>
+            <div class="slider__image-container" >
+                <div class="slider__text-container">
+                    <h3 class="slider__heading">Consectetur Elit Ipsum Risus</h3>
+                    <button class="btn btn--primary btn--big">Read more</button>
+                </div>
+                <picture>
+                    <source media="(max-width: 767px)" 
+                        srcset="img/img-header.jpg, img/img-header@2x.jpg 2x,
+                        img/img-header@3x.jpg 3x"/>
+                    <source media="(min-width: 768px)" 
+                        srcset="img/header-img.jpg, img/header-img@2x.jpg 2x,
+                        img/header-img@3x.jpg 3x"/>
+                    <img src="img/header-img.jpg" alt="slider-image" class="slider__image"/>
+                </picture>
+                
+            </div>
         </div>
+        <i class="slider__arrow slider__arrow--next"></i>  
     </section>
     <article class="article">
         <div class="article__flex-container">
@@ -63,14 +87,14 @@
                         srcset="img/img-1-mobile.jpg, img/img-1-mobile@2x.jpg 2x, img/img-1-mobile@3x.jpg 3x"/>
                     <source media="(min-width: 768px)" 
                         srcset="img/img-1.jpg, img/img-1@2x.jpg 2x, img/img-1@3x.jpg 3x"/>
-                    <img src="img/img-1.jpg" alt="article-image" class="article__image"/>
+                    <img src="img/img-1.jpg" alt="article-image" class="article__image" data-animate-class="from-left"/>
                 </picture>
                
             </div>
             <div class="article__text-container">
                 <h3>Mauris venenatis</h3>
                 <p>Mauris venenatis ante ut sem viverra convallis. Ut laoreet sodales lorem sit amet luctus. Nulla dictum est ac neque maximus tincidunt. Cras ullamcorper, lectus iaculis accumsan iaculis, massa metus volutpat lectus, ut efficitur elit ipsum non ipsum.</p>
-                <a href="javascript:;" class="link">Read more</a>
+                <div><a href="javascript:;" class="link">Read more</a></div>
             </div>
         </div>
     </article>
@@ -82,14 +106,14 @@
                         srcset="img/img-2-mobile.jpg, img/img-2-mobile@2x.jpg 2x, img/img-2-mobile@3x.jpg 3x"/>
                     <source media="(min-width: 768px)" 
                         srcset="img/img-2.jpg, img/img-1@2x.jpg 2x, img/img-1@3x.jpg 3x"/>
-                    <img src="img/img-2.jpg" alt="article-image" class="article__image"/>
+                    <img src="img/img-2.jpg" alt="article-image" class="article__image"  data-animate-class="from-right"/>
                 </picture>
                 
             </div>
             <div class="article__text-container">
                 <h3>Mauris venenatis</h3>
                 <p>Mauris venenatis ante ut sem viverra convallis. Ut laoreet sodales lorem sit amet luctus. Nulla dictum est ac neque maximus tincidunt. Cras ullamcorper, lectus iaculis accumsan iaculis, massa metus volutpat lectus, ut efficitur elit ipsum non ipsum.</p>
-                <a href="javascript:;" class="link">Read more</a>
+                <div><a href="javascript:;" class="link">Read more</a></div>
             </div>
             </div>
     </article>
@@ -163,12 +187,12 @@
         <div class="footer__social">
             <h3>Follow us</h3>
             <div class="footer__social-links">
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/facebook.svg" alt="facebook"><img class="hover" src="img/facebook-hover.svg" alt="facebook"></a> 
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/twitter.svg" alt="twitter"><img class="hover" src="img/twitter-hover.svg" alt="twitter"></a> 
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/instagram.svg" alt="instagram"><img class="hover" src="img/instagram-hover.svg" alt="instagram"></a> 
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/snapchat.svg" alt="snapchat"><img class="hover" src="img/snapchat-hover.svg" alt="snapchat"></a> 
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/pinterest.svg" alt="pinterest"><img class="hover" src="img/pinterest-hover.svg" alt="pinterest"></a> 
-                <a href="javascript:;" class="footer__social-link"><img class="img" src="img/youtube.svg" alt="youtube"><img class="hover" src="img/youtube-hover.svg" alt="youtube"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--facebook"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--twitter"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--instagram"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--snapchat"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--pinterest"></a> 
+                <a href="javascript:;" class="footer__social-link footer__social-link--youtube"></a> 
             </div>
         </div>
         <div class="footer__social">

@@ -7,7 +7,7 @@
         transform: translate(0%)
 @keyframes animate-from-right 
     from
-        transform: translate(-150%)
+        transform: translate(150%)
     
     to 
         transform: translate(0%)
@@ -27,8 +27,8 @@
             flex-flow: row
             justify-content: space-between
             margin: 0 auto
-        &--left 
-            flex-flow: row-reverse
+            &--left 
+                flex-flow: row-reverse
     &:nth-of-type(odd)
         background-color: $white
     &:nth-of-type(even)
@@ -40,6 +40,12 @@
             height: 299px
     &__image 
         width: 100%
+        &.from-left
+            animation-name: animate-from-left 
+            animation-duration: 2s
+        &.from-right
+            animation-name: animate-from-right
+            animation-duration: 2s
         @media (min-width: $m)
             height: 100%
             width: 540px
@@ -70,6 +76,7 @@
         a 
             font-weight: 700
             color: $heading-color 
+            display: inline
         @media (min-width: $m)
             padding-left: 60px
 

@@ -2,11 +2,70 @@
     width: 100%
     max-height: 640px
     height: 100%
-    background-color: $dark-text
+    
     overflow: hidden
     position: relative
-    @media (min-width: $m)  
-        max-height: 810px
+    height: 100%
+    &--hero
+        max-height: 640px
+        background-color: $dark-text
+        @media (min-width: $m)  
+            max-height: 810px
+        .slider__content
+            .slick-dots
+                color: $white
+                bottom: 30px
+     
+                li
+                    button:before
+                        border: 1px solid $white
+                    &.slick-active 
+                        button:before
+                            background-color: $white
+            @media (min-width: $m)
+                bottom: 50px
+                        
+
+    &--logo
+        max-height: 260px
+        min-height: 216px
+        padding: 0 auto
+        background-color: $background-gray
+        @media (min-width: $m)
+            max-height: 216px
+        
+        .slider
+            &__arrow
+                display: none
+                @media (min-width: $m)
+                    display: block
+
+                &--prev
+                    background-image: url('#{$img}arrow-prev-gray.svg')
+            
+                &--next
+                    background-image: url('#{$img}arrow-next-gray.svg')
+            &__container
+                max-width: 1280px
+                margin: 0 auto
+                position: relative
+            &__content
+                max-width: 940px
+                margin: 0 auto
+                padding: 90px 30px
+                // @media (min-width: $m)
+                    
+                .slick-dots
+                    color: $black
+                    bottom: 0
+        
+                    li
+                        button:before
+                            border: 1px solid $black
+                        &.slick-active 
+                            button:before
+                                background-color: $black
+            
     &__image-container
         position: relative
     &__image
@@ -34,27 +93,21 @@
         &.slick-dotted.slick-slider
             margin-bottom: 0
         .slick-dots
-            bottom: 30px
-            color: $white
-            content: 
             li
                 button:before
                     width: 10px
                     height: 10px
                     content: ''
                     
-                    border: 1px solid $white
                     border-radius: 50%
                     opacity: 1
                     font-size: 12px
                 &.slick-active 
                     button:before
                         content: ''
-                        background-color: $white
                         font-size: 6px
                 
-            @media (min-width: $m)
-                bottom: 50px
+           
     &__arrow
         display: none
         position: absolute
@@ -82,6 +135,24 @@
         &--next
             right: 0
             background-image: url('#{$img}arrow-next.svg')
-           
+    &__logo-container
+        width: 115px
+        height: 34px
+        background-position: center
+        background-repeat: no-repeat
+        background-size: contain
+        // margin: 0 15px
+        &--logo5
+            background-image: url('#{$img}logo-5.svg')
+        &--logo6
+            background-image: url('#{$img}logo-6.svg')
+        &--logo7
+            background-image: url('#{$img}logo-7.svg')
+        &--logo8
+            background-image: url('#{$img}logo-8.svg')
+        &--logo9
+            background-image: url('#{$img}logo-9.svg')
+ 
+
    
            

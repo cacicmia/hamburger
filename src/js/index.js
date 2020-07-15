@@ -8,13 +8,14 @@ $(document).ready(function() {
     const submitForm = $('#submit-form') 
     const newsletterSubmit = $('#sign-up')
     let scrollPosition = 0
-    const slider = $('.slider__content')
-    slider.each(function() {
+    const heroSlider = $('#hero-slider')
+    let sliderLogo= $('#slider-logo')
+    heroSlider.each(function() {
         $(this).slick({
             dots: true,
             // slidesToScroll: 4,
-            prevArrow: $('.slider__arrow--prev'),
-            nextArrow: $('.slider__arrow--next'),
+            prevArrow: $('.slider--hero .slider__arrow--prev'),
+            nextArrow: $('.slider--hero .slider__arrow--next'),
             responsive: [
                 {
                     breakpoint: 768,
@@ -28,6 +29,28 @@ $(document).ready(function() {
         })
 
     })
+sliderLogo.each(function() {
+    $(this).slick({
+        dots: false,
+        slidesToShow: 5,
+        respondTo: 'slider',
+        prevArrow: $('.slider--logo .slider__arrow--prev'),
+        nextArrow: $('.slider--logo .slider__arrow--next'),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    prevArrow: null,
+                    slidesToShow: 2,
+                    nextArrow: null,
+                    dots: true,
+                }
+            }
+        ]
+        
+    })
+
+})
     menuOpen.on('click', function() {
         pageNavigation.addClass('page-nav--opened');
         body.addClass('overflow-hidden')

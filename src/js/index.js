@@ -29,28 +29,28 @@ $(document).ready(function() {
         })
 
     })
-    sliderLogo.each(function() {
-        $(this).slick({
-            dots: false,
-            slidesToShow: 5,
-            respondTo: 'slider',
-            prevArrow: $('.slider--logo .slider__arrow--prev'),
-            nextArrow: $('.slider--logo .slider__arrow--next'),
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        prevArrow: null,
-                        slidesToShow: 2,
-                        nextArrow: null,
-                        dots: true,
-                    }
+sliderLogo.each(function() {
+    $(this).slick({
+        dots: false,
+        slidesToShow: 5,
+        respondTo: 'slider',
+        prevArrow: $('.slider--logo .slider__arrow--prev'),
+        nextArrow: $('.slider--logo .slider__arrow--next'),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    prevArrow: null,
+                    slidesToShow: 2,
+                    nextArrow: null,
+                    dots: true,
                 }
-            ]
-            
-        })
-
+            }
+        ]
+        
     })
+
+})
     menuOpen.on('click', function() {
         pageNavigation.addClass('page-nav--opened');
         body.addClass('overflow-hidden')

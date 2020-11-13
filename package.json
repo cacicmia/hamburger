@@ -1,5 +1,5 @@
 {
-  "name": "prasac",
+  "name": "hamburger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,9 +17,10 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglifycss": "^1.1.0",
     "webpack": "^4.43.0",
     "webpack-stream": "^5.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp-uglifycss": "^1.1.0"
+  }
 }
